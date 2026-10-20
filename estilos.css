@@ -1,0 +1,229 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --accent-color: #6366f1;
+    --border-radius: 12px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    min-width: 300px;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: white;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+/* Estilos de la tarjeta de resultado */
+.profile-card {
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    background: #334155;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.empty-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #334155;
+    background: transparent;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.site-header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: white;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.error {
+    background-color: #7f1d1d;
+    color: #fee2e2;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+table.tabla-reservas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+table.tabla-reservas th {
+    background-color: #334155;
+    padding: 10px;
+    text-align: left;
+}
+
+table.tabla-reservas td {
+    padding: 10px;
+    border-bottom: 1px solid #334155;
+}
+
+table.tabla-reservas tr:nth-child(even) {
+    background-color: #172033;
+}
+
+table.tabla-reservas a {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.profile-card {
+    text-align: center;
+    border: 2px dashed var(--accent-color);
+}

@@ -1,0 +1,3 @@
+2026-10-20|14:08|tsrfu|mail@gmail.com|22|General|Viernes|Tarjeta|60€|uploads/perfil.jpg|21344
+2000-01-01|22:22|pepe|correo@gmail.com|22|General|Viernes,Sabado|Tarjeta|70€|uploads/pikachuuu.png|abcd
+2222-12-12|22:22|admin|corre@gmail.com|22|General|Viernes,Domingo|Bizum|70€|uploads/perfil.jpg|1234
